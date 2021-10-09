@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter</title>
+	<link rel="icon" href="icon.png">
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="kwitter-login.js"></script>
+</head>
+<body onload="load_content()">
+<center>
+	<h1 class="header">	
+		Kwitter	<sup>
+	<img src="m2.png">
+	</sup>
+</h1>
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+	<img src="logo.png" class="logo">
+		<h3 >See what is happening in the world right now</h3>
+		<h4 >Join Kwitter today</h4>
+		<div class="form-group">
+		  <label id="info">Log in</label>
+		  <div class="input-container">
+			<i class="fa fa-user"></i>
+			<input id="user_name" class="form-control" placeholder="User Name">
+		</div>
+		<div class="input-container">
+		  <i class="fa fa-envelope"></i>
+		  <input type="email" id="email" class="form-control" placeholder="Email">
+		</div>
+		<div class="input-container">
+		  <i class="fa fa-key"></i>
+		  <input type="password" id="password" class="form-control" placeholder="Password">
+		</div>
+		</div>
+		<button id="login_button" onclick="add_user()">Log in</button>
+		<br><br>
+	</div>
+</center>
+</body>
+</html>

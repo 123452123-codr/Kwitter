@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button {
+                padding-left: 60px !important;
+                padding-right: 60px !important;
+            }
+        </style>
+    	<title>Kwitter Message page</title>
+	    <link rel="icon" href="icon.png">
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+                <center>
+                    <h1 class="header">	
+                        Kwitter	
+                        <sup>
+                            <img src="m2.png">
+                        </sup>
+                    </h1>
+                    <div style="margin-left: 60px;">
+                        <button class="btn btn-warning" onclick="navigate('signup.html')">Sign up</button>
+                        <br><br><br>
+                        <button class="btn btn-success" onclick="navigate('login.html')">Log in</button>
+                    </div>
+                </center>
+        </div>
+        <script>
+            function navigate(url) {
+                window.location.replace(url);
+            }
+        </script>
+    </body>
+</html>
